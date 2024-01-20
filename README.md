@@ -26,4 +26,4 @@ heroku create --region us YOUR-APP-NAME
 
 - Create container: ```heroku stack:set container```
 
-- Push to heroku: ```git push heroku main:hk_wzmlx -f```
+- Push to heroku: ```git push heroku main:master -f```
