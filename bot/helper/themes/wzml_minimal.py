@@ -5,7 +5,7 @@ class WZMLStyle:
     ST_BN1_NAME = '✧ re leech ✧'
     ST_BN1_URL = 'https://t.me/maharaja_91'
     ST_BN2_NAME = 'Updates'
-    ST_BN2_URL = 'https://t.me/WZML_X'
+    ST_BN2_URL = 'https://t.me/RE_X_BOTZ'
     ST_MSG = '''<b>ᴛʜɪꜱ ʙᴏᴛ ᴄᴀɴ ᴍɪʀʀᴏʀ ᴀʟʟ ʏᴏᴜʀ ʟɪɴᴋꜱ | ғɪʟᴇꜱ | ᴛᴏʀʀᴇɴᴛꜱ ᴛᴏ ɢᴏᴏɢʟᴇ ᴅʀɪᴠᴇ ᴏʀ ᴀɴʏ ʀᴄʟᴏɴᴇ ᴄʟᴏᴜᴅ ᴏʀ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ
 ᴛʏᴘᴇ {help_command} ᴛᴏ ɢᴇᴛ ᴀ ʟɪsᴛ ᴏғ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs</b>'''
     ST_BOTPM = '''<b>ɴᴏᴡ, ᴛʜɪꜱ ʙᴏᴛ ᴡɪʟʟ ꜱᴇɴᴅ ᴀʟʟ ʏᴏᴜʀ ғɪʟᴇꜱ ᴀɴᴅ ʟɪɴᴋꜱ ʜᴇʀᴇ. sᴛᴀʀᴛ ᴜꜱɪɴɢ ...</b>'''
@@ -263,37 +263,41 @@ class WZMLStyle:
 
 '''
 
-    UNIVERSAL = '''㊂ <b><u>Universal Settings : {NAME}</u></b>
+    UNIVERSAL = '''<b><u>🌟 ᴜɴɪᴠᴇʀsᴀʟ sᴇᴛᴛɪɴɢs :</u> {NAME}</b>
 
-┎<b> YT-DLP Options :</b> <b><code>{YT}</code></b>
-┠<b> Daily Tasks :</b> <code>{DT}</code> per day
-┠<b> Last Bot Used :</b> <code>{LAST_USED}</code>
+┎<b> ʏᴛ-ᴅʟᴘ ᴏᴘᴛɪᴏɴs :</b> <b><code>{YT}</code></b>
+┠<b> ᴅᴀɪʟʏ ᴛᴀsᴋs :</b> <code>{DT}</code> per day
+┠<b> ʟᴀsᴛ ʙᴏᴛ ᴜsᴇᴅ :</b> <code>{LAST_USED}</code>
 ┠<b> User Session :</b> <code>{USESS}</code>
-┠<b> MediaInfo Mode :</b> <code>{MEDIAINFO}</code>
-┠<b> Save Mode :</b> <code>{SAVE_MODE}</code>
-┖<b> User Bot PM :</b> <code>{BOT_PM}</code>'''
+┠<b> ᴍᴇᴅɪᴀ ɪɴғᴏ ᴍᴏᴅᴇ :</b> <code>{MEDIAINFO}</code>
+┠<b> sᴀᴠᴇ ᴍᴏᴅᴇ :</b> <code>{SAVE_MODE}</code>
+┖<b> ᴜsᴇʀ ʙᴏᴛ ᴘᴍ :</b> <code>{BOT_PM}</code>
 
-    MIRROR = '''㊂ <b><u>Mirror/Clone Settings : {NAME}</u></b>
+🫅 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ ›› <a href='https://t.me/maharaja_91'>ʀᴀᴊᴀ ᠰ TɢX</a>
 
-┎<b> RClone Config :</b> <i>{RCLONE}</i>
-┠<b> Mirror Prefix :</b> <code>{MPREFIX}</code>
+'''
+
+    MIRROR = '''<b><u>🌟 ᴍɪʀʀᴏʀ-ᴄʟᴏɴᴇ sᴇᴛᴛɪɴɢs :</u> {NAME}</b>
+
+┎<b> ᴅᴀɪʟʏ ᴍɪʀʀᴏʀ :</b> <code>{DM}</code> per day
+┠<b> ʀᴄʟᴏɴᴇ ᴄᴏɴғɪɢ :</b> <i>{RCLONE}</i>
+┠<b> ᴍɪʀʀᴏʀ ᴘʀᴇғɪx :</b> <code>{MPREFIX}</code>
 ┠<b> Mirror Suffix :</b> <code>{MSUFFIX}</code>
 ┠<b> Mirror Remname :</b> <code>{MREMNAME}</code>
 ┠<b> DDL Server(s) :</b> <i>{DDL_SERVER}</i>
 ┠<b> User TD Mode :</b> <i>{TMODE}</i>
-┠<b> Total User TD(s) :</b> <i>{USERTD}</i>
-┖<b> Daily Mirror :</b> <code>{DM}</code> per day'''
+┖<b> Total User TD(s) :</b> <i>{USERTD}</i>'''
 
-    LEECH = '''㊂ <b><u>Leech Settings for {NAME}</u></b>
+    LEECH = '''<b><u>🌟 ʟᴇᴇᴄʜ sᴇᴛᴛɪɴɢs ғᴏʀ</u> - {NAME}</b>
 
-┎<b> Daily Leech : </b><code>{DL}</code> per day
-┠<b> Leech Type :</b> <i>{LTYPE}</i>
-┠<b> Custom Thumbnail :</b> <i>{THUMB}</i>
-┠<b> Leech Split Size :</b> <code>{SPLIT_SIZE}</code>
-┠<b> Equal Splits :</b> <i>{EQUAL_SPLIT}</i>
-┠<b> Media Group :</b> <i>{MEDIA_GROUP}</i>
-┠<b> Leech Caption :</b> <code>{LCAPTION}</code>
-┠<b> Leech Prefix :</b> <code>{LPREFIX}</code>
-┠<b> Leech Suffix :</b> <code>{LSUFFIX}</code>
-┠<b> Leech Dumps :</b> <code>{LDUMP}</code>
-┖<b> Leech Remname :</b> <code>{LREMNAME}</code>'''
+┎<b> ᴅᴀɪʟʏ ʟᴇᴇᴄʜ : </b><code>{DL}</code> per day
+┠<b> ʟᴇᴇᴄʜ ᴛʏᴘᴇ : </b> <i>{LTYPE}</i>
+┠<b> ᴄᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ : </b> <i>{THUMB}</i>
+┠<b> ʟᴇᴇᴄʜ sᴘʟɪᴛ sɪᴢᴇ :</b> <code>{SPLIT_SIZE}</code>
+┠<b> ᴇǫᴜᴀʟ sᴘʟɪᴛs :</b> <i>{EQUAL_SPLIT}</i>
+┠<b> ᴍᴇᴅɪᴀ ɢʀᴏᴜᴘ :</b> <i>{MEDIA_GROUP}</i>
+┠<b> ʟᴇᴇᴄʜ ᴄᴀᴘᴛɪᴏɴ :</b> <code>{LCAPTION}</code>
+┠<b> ʟᴇᴇᴄʜ ᴘʀᴇғɪx :</b> <code>{LPREFIX}</code>
+┠<b> ʟᴇᴇᴄʜ sᴜғғɪx :</b> <code>{LSUFFIX}</code>
+┠<b> Leech ᴅᴜᴍᴘs :</b> <code>{LDUMP}</code>
+┖<b> ʟᴇᴇᴄʜ ʀᴇᴍᴀɴᴍᴇ :</b> <code>{LREMNAME}</code>'''
