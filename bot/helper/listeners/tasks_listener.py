@@ -617,12 +617,11 @@ class MirrorLeechListener:
             if self.sameDir and self.uid in self.sameDir['tasks']:
                 self.sameDir['tasks'].remove(self.uid)
                 self.sameDir['total'] -= 1
-        msg = f'''<i><b>Download Stopped!</b></i>
-┠ <b>Task for:</b> {self.tag}
-┃
-┠ <b>Due To:</b> {escape(error)}
-┠ <b>Mode:</b> {self.upload_details['mode']}
-┖ <b>Elapsed:</b> {get_readable_time(time() - self.message.date.timestamp())}'''
+        msg = f'''<b>📥 ᴅᴏᴡɴʟᴏᴀᴅ sᴛᴏᴘᴘᴇᴅ !!!</b>
+┠ <b>ᴛᴀsᴋ ғᴏʀ :</b> {self.tag}
+┠ <b>ᴅᴜᴇ ᴛᴏ :</b> {escape(error)}
+┠ <b>ᴍᴏᴅᴇ:</b> {self.upload_details['mode']}
+┖ <b>ᴇʟᴀᴘsᴇᴅ :</b> {get_readable_time(time() - self.message.date.timestamp())}'''
         await sendMessage(self.message, msg, button)
         if count == 0:
             await self.clean()
@@ -655,12 +654,11 @@ class MirrorLeechListener:
             if self.uid in download_dict.keys():
                 del download_dict[self.uid]
             count = len(download_dict)
-        msg = f'''<i><b>Upload Stopped!</b></i>
-┠ <b>Task for:</b> {self.tag}
-┃
-┠ <b>Due To:</b> {escape(error)}
-┠ <b>Mode:</b> {self.upload_details['mode']}
-┖ <b>Elapsed:</b> {get_readable_time(time() - self.message.date.timestamp())}'''
+        msg = f'''<b>📤 ᴜᴘʟᴏᴀᴅ sᴛᴏᴘᴘᴇᴅ !!!</b>
+┠ <b>ᴛᴀsᴋ ғᴏʀ :</b> {self.tag}
+┠ <b>ᴅᴜᴇ ᴛᴏ :</b> {escape(error)}
+┠ <b>ᴍᴏᴅᴇ:</b> {self.upload_details['mode']}
+┖ <b>ᴇʟᴀᴘsᴇᴅ:</b> {get_readable_time(time() - self.message.date.timestamp())}'''
         await sendMessage(self.message, msg)
         if count == 0:
             await self.clean()
