@@ -45,7 +45,7 @@ desp_dict = {'rcc': ['RClone is a command-line program to sync files and directo
             'streamtape': ['Streamtape is free Video Streaming & sharing Hoster', "Send StreamTape's Login and Key\n<b>Format:</b> <code>user_login:pass_key</code>\n<b>Timeout:</b> 60 sec"],
             }
 fname_dict = {'rcc': 'RClone',
-             'lprefix': 'Prrrefix',
+             'lprefix': 'Prefix',
              'lsuffix': 'Suffix',
              'lremname': 'Remname',
              'mprefix': 'Prefix',
@@ -71,21 +71,19 @@ async def get_user_settings(from_user, key=None, edit_type=None, edit_mode=None)
     rclone_path = f'wcl/{user_id}.conf'
     user_dict = user_data.get(user_id, {})
     if key is None:
-        buttons.ibutton("Universal Settings", f"userset {user_id} universal")
-        buttons.ibutton("Mirror Settings", f"userset {user_id} mirror")
-        buttons.ibutton("Leech Settings", f"userset {user_id} leech")
-        if user_dict and any(key in user_dict for key in list(fname_dict.keys())):
-            buttons.ibutton("Reset Setting", f"userset {user_id} reset_all")
-        buttons.ibutton("Close", f"userset {user_id} close")
+        buttons.ibutton("ᴜɴɪᴠᴇʀsᴀʟ sᴇᴛᴛɪɴɢs", f"userset {user_id} universal")
+        buttons.ibutton("ᴍɪʀʀᴏʀ sᴇᴛᴛɪɴɢs", f"userset {user_id} mirror")
+        buttons.ibutton("ʟᴇᴇᴄʜ sᴇᴛᴛɪɴɢs", f"userset {user_id} leech")
+        buttons.ibutton("ᴄʟᴏsᴇ", f"userset {user_id} close")
 
         text = BotTheme('USER_SETTING', NAME=name, ID=user_id, USERNAME=f'@{from_user.username}', LANG=Language.get(lc).display_name() if (lc := from_user.language_code) else "N/A", DC=from_user.dc_id)
         
         button = buttons.build_menu(1)
     elif key == 'universal':
         ytopt = 'Not Exists' if (val:=user_dict.get('yt_opt', config_dict.get('YT_DLP_OPTIONS', ''))) == '' else val
-        buttons.ibutton(f"{'✅️' if ytopt != 'Not Exists' else ''} YT-DLP Options", f"userset {user_id} yt_opt")
+        buttons.ibutton(f"{'✓' if ytopt != 'Not Exists' else ''} YT-DLP Options", f"userset {user_id} yt_opt")
         u_sess = 'Exists' if user_dict.get('usess', False) else 'Not Exists'
-        buttons.ibutton(f"{'✅️' if u_sess != 'Not Exists' else ''} User Session", f"userset {user_id} usess")
+        buttons.ibutton(f"{'✓' if u_sess != 'Not Exists' else ''} User Session", f"userset {user_id} usess")
         bot_pm = "Enabled" if user_dict.get('bot_pm', config_dict['BOT_PM']) else "Disabled"
         buttons.ibutton('Disable Bot PM' if bot_pm == 'Enabled' else 'Enable Bot PM', f"userset {user_id} bot_pm")
         if config_dict['BOT_PM']:
@@ -105,7 +103,7 @@ async def get_user_settings(from_user, key=None, edit_type=None, edit_mode=None)
 
         text = BotTheme('UNIVERSAL', NAME=name, YT=escape(ytopt), DT=f"{dailytas} / {dailytl}", LAST_USED=lastused, BOT_PM=bot_pm, MEDIAINFO=mediainfo, SAVE_MODE=save_mode, USESS=u_sess)
         buttons.ibutton("Back", f"userset {user_id} back", "footer")
-        buttons.ibutton("Close", f"userset {user_id} close", "footer")
+        buttons.ibutton("ᴄʟᴏsᴇ", f"userset {user_id} close", "footer")
         button = buttons.build_menu(2)
     elif key == 'mirror':
         buttons.ibutton("RClone", f"userset {user_id} rcc")
@@ -135,7 +133,7 @@ async def get_user_settings(from_user, key=None, edit_type=None, edit_mode=None)
                 MSUFFIX=escape(msuffix), TMODE=tds_mode, USERTD=user_tds)
 
         buttons.ibutton("Back", f"userset {user_id} back", "footer")
-        buttons.ibutton("Close", f"userset {user_id} close", "footer")
+        buttons.ibutton("ᴄʟᴏsᴇ", f"userset {user_id} close", "footer")
         button = buttons.build_menu(2)
     elif key == 'leech':
         if user_dict.get('as_doc', False) or 'as_doc' not in user_dict and config_dict['AS_DOCUMENT']:
@@ -178,7 +176,7 @@ async def get_user_settings(from_user, key=None, edit_type=None, edit_mode=None)
                 LSUFFIX=escape(lsuffix), LDUMP=ldump, LREMNAME=escape(lremname))
 
         buttons.ibutton("Back", f"userset {user_id} back", "footer")
-        buttons.ibutton("Close", f"userset {user_id} close", "footer")
+        buttons.ibutton("ᴄʟᴏsᴇ", f"userset {user_id} close", "footer")
         button = buttons.build_menu(2)
     elif key == "ddl_servers":
         ddl_serv, serv_list = 0, []
@@ -193,7 +191,7 @@ async def get_user_settings(from_user, key=None, edit_type=None, edit_mode=None)
         for btn in ['gofile', 'streamtape']:
             buttons.ibutton(f"{'✅️' if btn in serv_list else ''} {fname_dict[btn]}", f"userset {user_id} {btn}")
         buttons.ibutton("Back", f"userset {user_id} back mirror", "footer")
-        buttons.ibutton("Close", f"userset {user_id} close", "footer")
+        buttons.ibutton("ᴄʟᴏsᴇ", f"userset {user_id} close", "footer")
         button = buttons.build_menu(2)
     elif edit_type:
         text = f"㊂ <b><u>{fname_dict[key]} Settings :</u></b>\n\n"
