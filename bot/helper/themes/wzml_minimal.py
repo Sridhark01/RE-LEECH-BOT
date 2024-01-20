@@ -206,15 +206,15 @@ class WZMLStyle:
     CANCEL =         '\n┖ {Cancel}\n\n'
 
     ####------FOOTER--------
-    FOOTER = '<b>┌────❪ ʙᴏᴛ sᴛᴀᴛᴜs ❫─────༻</b>\n'
+    FOOTER = '<b> ┌────❪ ʙᴏᴛ sᴛᴀᴛᴜs ❫─────༻</b>\n'
     TASKS =  '┠ <b>ᴛᴀsᴋs :</b> <code>{Tasks}</code>\n'
     BOT_TASKS = '┠ <b>ᴛᴀsᴋs :</b> <code>{Tasks}</code>/<code>{Ttask}</code> | <b>ᴀᴠʟ :</b> <code>{Free}</code>\n'
-    Cpu = '┠ <b>ᴄᴘᴜ :</b> <code>{cpu}%</code> | '
-    FREE =                      '<b>ғʀᴇᴇ :</b> <code>{free}</code> <code>[{free_p}%</code>]'
+    Cpu = '┠ <b>ᴄᴘᴜ :</b> <code>{cpu}</code>% | '
+    FREE =                      '<b>ғʀᴇᴇ :</b> <code>{free}</code> <code>[{free_p}]</code>%'
     Ram = '\n┠ <b>RAM:</b> <code>{ram}%</code> | '
     uptime =                     '<b>ᴜᴘᴛɪᴍᴇ :</b> <code>{uptime}</code>'
     DL = '\n┖ <b>ᴅʟ :</b> <code>{DL}</code> | '
-    UL =                        '<b>ᴜʟ :</b> <code>{UL}</code>\n└──────────────────༻</b>\n'
+    UL =                        '<b>ᴜʟ :</b> <code>{UL}</code>\n └──────────────────༻</b>\n'
 
     ###--------BUTTONS-------
     PREVIOUS = '⇇ ʙᴀᴄᴋ'
