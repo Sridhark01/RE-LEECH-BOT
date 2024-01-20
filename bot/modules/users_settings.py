@@ -45,7 +45,7 @@ desp_dict = {'rcc': ['RClone is a command-line program to sync files and directo
             'streamtape': ['Streamtape is free Video Streaming & sharing Hoster', "Send StreamTape's Login and Key\n<b>Format:</b> <code>user_login:pass_key</code>\n<b>Timeout:</b> 60 sec"],
             }
 fname_dict = {'rcc': 'RClone',
-             'lprefix': 'Prefix',
+             'lprefix': 'Prrrefix',
              'lsuffix': 'Suffix',
              'lremname': 'Remname',
              'mprefix': 'Prefix',
