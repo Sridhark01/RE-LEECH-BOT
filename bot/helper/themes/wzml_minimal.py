@@ -178,10 +178,10 @@ class WZMLStyle:
     #####---------PROGRESSIVE STATUS-------
     BAR =               '\n┃ {Bar}'
     PROCESSED =         '\n┠ <b>ᴘʀᴏᴄᴇssᴇᴅ :</b> {Processed}'
-    STATUS =            '\n┠ <b>sᴛᴀᴛᴜs :</b> <a href="{Url}">{Status}</a>'
+    STATUS =            '\n┠ <b>sᴛᴀᴛᴜs :</b> <code><a href="{Url}">{Status}</a></code>'
     ETA =                                                ' | <b>ᴇᴛᴀ :</b> <code>{Eta}</code>'
     SPEED =             '\n┠ <b>sᴘᴇᴇᴅ :</b> <code>{Speed}</code>'
-    ELAPSED =                                     ' | <b>ᴇʟᴀᴘsᴇᴅ :</b> {Elapsed}'
+    ELAPSED =                                     ' | <b>ᴇʟᴀᴘsᴇᴅ :</b> <code>{Elapsed}</code>'
     ENGINE =            '\n┠ <b>ᴇɴɢɪɴᴇ :</b> <code>{Engine}</code>'
     STA_MODE =          '\n┠ <b>ᴍᴏᴅᴇ :</b> {Mode}'
     SEEDERS =           '\n┠ <b>Seeders:</b> {Seeders} | '
@@ -213,8 +213,8 @@ class WZMLStyle:
     FREE =                      '<b>ғʀᴇᴇ :</b> <code>{free}</code> <code>[{free_p}%</code>]'
     Ram = '\n┠ <b>RAM:</b> <code>{ram}%</code> | '
     uptime =                     '<b>ᴜᴘᴛɪᴍᴇ :</b> <code>{uptime}</code>'
-    DL = '\n┖ <b>ᴅʟ :</b> <code>{DL}</code>/s | '
-    UL =                        '<b>ᴜʟ :</b> <code>{UL}</code>/s\n└──────────────────༻</b>\n'
+    DL = '\n┖ <b>ᴅʟ :</b> <code>{DL}</code> | '
+    UL =                        '<b>ᴜʟ :</b> <code>{UL}</code>\n└──────────────────༻</b>\n'
 
     ###--------BUTTONS-------
     PREVIOUS = '⇇ ʙᴀᴄᴋ'
