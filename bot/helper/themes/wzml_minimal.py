@@ -173,17 +173,17 @@ class WZMLStyle:
 
     # def get_readable_message(): ---> bot_utilis.py
     ####--------OVERALL MSG HEADER----------
-    STATUS_NAME =       '<b><i>{Name}</i></b>'
+    STATUS_NAME =       '<b>✓ ɴᴀᴍᴇ : <code>{Name}</code></b>'
 
     #####---------PROGRESSIVE STATUS-------
     BAR =               '\n┃ {Bar}'
-    PROCESSED =         '\n┠ <b>Processed:</b> {Processed}'
-    STATUS =            '\n┠ <b>Status:</b> <a href="{Url}">{Status}</a>'
-    ETA =                                                ' | <b>ETA:</b> {Eta}'
-    SPEED =             '\n┠ <b>Speed:</b> {Speed}'
-    ELAPSED =                                     ' | <b>Elapsed:</b> {Elapsed}'
-    ENGINE =            '\n┠ <b>Engine:</b> {Engine}'
-    STA_MODE =          '\n┠ <b>Mode:</b> {Mode}'
+    PROCESSED =         '\n┠ <b>ᴘʀᴏᴄᴇssᴇᴅ :</b> {Processed}'
+    STATUS =            '\n┠ <b>sᴛᴀᴛᴜs :</b> <a href="{Url}">{Status}</a>'
+    ETA =                                                ' | <b>ᴇᴛᴀ :</b> <code>{Eta}</code>'
+    SPEED =             '\n┠ <b>sᴘᴇᴇᴅ :</b> <code>{Speed}</code>'
+    ELAPSED =                                     ' | <b>ᴇʟᴀᴘsᴇᴅ :</b> {Elapsed}'
+    ENGINE =            '\n┠ <b>ᴇɴɢɪɴᴇ :</b> <code>{Engine}</code>'
+    STA_MODE =          '\n┠ <b>ᴍᴏᴅᴇ :</b> {Mode}'
     SEEDERS =           '\n┠ <b>Seeders:</b> {Seeders} | '
     LEECHERS =                                           '<b>Leechers:</b> {Leechers}'
 
