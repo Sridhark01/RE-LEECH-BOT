@@ -176,8 +176,8 @@ class WZMLStyle:
     STATUS_NAME =       '<b>✓ ɴᴀᴍᴇ : <code>{Name}</code></b>'
 
     #####---------PROGRESSIVE STATUS-------
-    BAR =               '\n┃ {Bar}'
-    PROCESSED =         '\n┠ <b>ᴘʀᴏᴄᴇssᴇᴅ :</b> {Processed}'
+    BAR =               '\n\n┃ {Bar}'
+    PROCESSED =         '\n┠ <b>ᴘʀᴏᴄᴇssᴇᴅ :</b> <code>{Processed}</code>'
     STATUS =            '\n┠ <b>sᴛᴀᴛᴜs :</b> <code><a href="{Url}">{Status}</a></code>'
     ETA =                                                ' | <b>ᴇᴛᴀ :</b> <code>{Eta}</code>'
     SPEED =             '\n┠ <b>sᴘᴇᴇᴅ :</b> <code>{Speed}</code>'
@@ -286,7 +286,11 @@ class WZMLStyle:
 ┠<b> Mirror Remname :</b> <code>{MREMNAME}</code>
 ┠<b> DDL Server(s) :</b> <i>{DDL_SERVER}</i>
 ┠<b> User TD Mode :</b> <i>{TMODE}</i>
-┖<b> Total User TD(s) :</b> <i>{USERTD}</i>'''
+┖<b> Total User TD(s) :</b> <i>{USERTD}</i>
+
+🫅 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ ›› <a href='https://t.me/maharaja_91'>ʀᴀᴊᴀ ᠰ TɢX</a>
+
+'''
 
     LEECH = '''<b><u>🌟 ʟᴇᴇᴄʜ sᴇᴛᴛɪɴɢs ғᴏʀ</u> - {NAME}</b>
 
@@ -300,4 +304,8 @@ class WZMLStyle:
 ┠<b> ʟᴇᴇᴄʜ ᴘʀᴇғɪx :</b> <code>{LPREFIX}</code>
 ┠<b> ʟᴇᴇᴄʜ sᴜғғɪx :</b> <code>{LSUFFIX}</code>
 ┠<b> Leech ᴅᴜᴍᴘs :</b> <code>{LDUMP}</code>
-┖<b> ʟᴇᴇᴄʜ ʀᴇᴍᴀɴᴍᴇ :</b> <code>{LREMNAME}</code>'''
+┖<b> ʟᴇᴇᴄʜ ʀᴇᴍᴀɴᴍᴇ :</b> <code>{LREMNAME}</code>
+
+🫅 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ ›› <a href='https://t.me/maharaja_91'>ʀᴀᴊᴀ ᠰ TɢX</a>
+
+'''
