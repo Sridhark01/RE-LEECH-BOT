@@ -207,20 +207,19 @@ class WZMLStyle:
 
     ####------FOOTER--------
     FOOTER = '<b>┌────❪ ʙᴏᴛ sᴛᴀᴛᴜs ❫─────༻</b>\n'
-    TASKS =  '┠ <b>ᴛᴀsᴋs :</b> {Tasks}\n'
-    BOT_TASKS = '┠ <b>ᴛᴀsᴋs :</b> {Tasks}/{Ttask} | <b>ᴀᴠʟ :</b> {Free}\n'
-    Cpu = '┠ <b>ᴄᴘᴜ :</b> {cpu}% | '
-    FREE =                      '<b>ғʀᴇᴇ :</b> {free} [{free_p}%]'
-    Ram = '\n┠ <b>RAM:</b> {ram}% | '
-    uptime =                     '<b>ᴜᴘᴛɪᴍᴇ :</b> {uptime}'
-    DL = '\n┖ <b>ᴅʟ :</b> {DL}/s | '
-    UL =                        '<b>ᴜʟ :</b> {UL}/s\n'
-    FOOTER = '<b>└──────────────────༻</b>\n'
+    TASKS =  '┠ <b>ᴛᴀsᴋs :</b> <code>{Tasks}</code>\n'
+    BOT_TASKS = '┠ <b>ᴛᴀsᴋs :</b> <code>{Tasks}</code>/<code>{Ttask}</code> | <b>ᴀᴠʟ :</b> <code>{Free}</code>\n'
+    Cpu = '┠ <b>ᴄᴘᴜ :</b> <code>{cpu}%</code> | '
+    FREE =                      '<b>ғʀᴇᴇ :</b> <code>{free}</code> <code>[{free_p}%</code>]'
+    Ram = '\n┠ <b>RAM:</b> <code>{ram}%</code> | '
+    uptime =                     '<b>ᴜᴘᴛɪᴍᴇ :</b> <code>{uptime}</code>'
+    DL = '\n┖ <b>ᴅʟ :</b> <code>{DL}</code>/s | '
+    UL =                        '<b>ᴜʟ :</b> <code>{UL}</code>/s\n└──────────────────༻</b>\n'
 
     ###--------BUTTONS-------
-    PREVIOUS = '⫷'
+    PREVIOUS = '⇇ ʙᴀᴄᴋ'
     REFRESH = 'ᴘᴀɢᴇs\n{Page}'
-    NEXT = '⫸'
+    NEXT = 'ɴᴇxᴛ ⇉'
     # ---------------------
 
     #STOP_DUPLICATE_MSG: ---> clone.py, aria2_listener.py, task_manager.py
